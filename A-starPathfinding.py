@@ -239,6 +239,10 @@ def main(win, width):
 
 					algorithm(lambda: draw(win, grid, ROWS, width), grid, start, end)
 
+				if event.key == pygame.K_c:
+					start = None
+					end = None
+					grid = make_grid(ROWS, width)
 
 	pygame.quit()
 main(WIN, WIDTH)
